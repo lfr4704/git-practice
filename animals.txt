@@ -16,3 +16,7 @@ computer
 earphones
 pen
 car
+rocks
+house
+broom
+mop
