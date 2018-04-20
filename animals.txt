@@ -17,3 +17,8 @@ earphones
 pen
 car
 cleaning supplies 
+rocks
+house
+broom
+mop
+
