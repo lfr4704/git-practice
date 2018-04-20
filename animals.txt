@@ -1,9 +1,11 @@
 dog 
 cat
-
-
+buffalo
+shark
 parrot
 fish
 computers
-
+car
 fish
+earphones
+elephants
