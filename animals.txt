@@ -1,5 +1,10 @@
 dog 
 cat
+<<<<<<< HEAD
 parrot
 fish
 computers
+=======
+
+fish
+>>>>>>> alternate_universe
