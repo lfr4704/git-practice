@@ -15,7 +15,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 // Express 'Routes'
-app.use(express.static('.'));
+app.use(express.static('.'));// use this line when you don't have a client folder
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 http.listen(process.env.PORT, process.env.IP, function(error){
@@ -26,3 +26,12 @@ http.listen(process.env.PORT, process.env.IP, function(error){
     console.log("Server has started");
 });
 // Server Config End
+
+
+
+app.post('/messages', (req, res) =>{
+
+		console.log(req.body);
+		res.send(200);
+
+});

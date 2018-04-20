@@ -12,6 +12,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous">
 </script>
+<script src="/socket.io/socket.io.js"></script>
 
   <style>
       body{
@@ -27,9 +28,28 @@
 
 <body>
     
+    <textarea id="message" placeholder="message"/></textarea>
+    <button id="send">send</button>
+    
   <script>
+  /*global io*/
+  	let socket = io();
+/* global $ */
+    $(() => { //this is the short hand version of the doc ready event
+        $('#send').click(() =>{ // => {} this is equivalent to passing a callback
+            let message = {name: $("#message").val()};
+            postMessages(message);
+            
+        });
+
+    
+            
+    });
+    
   
-  console.log("hello world");
+    function postMessages(message) {
+        $.post('https://git-practice-lfr4704.c9users.io/messages', message);
+    }
       
   </script>
   
