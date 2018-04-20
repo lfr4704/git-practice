@@ -4,12 +4,15 @@ buffalo
 shark
 parrot
 fish
-computers
 car
 fish
-earphones
 elephants
 
-adding more elements 
+removed all non animals
 
-adding another section 
+added things
+
+computer
+earphones
+pen
+car
